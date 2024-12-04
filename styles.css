@@ -1,0 +1,238 @@
+
+.navbar navbar-expand-md navbar-dark {
+    background: 
+        linear-gradient(90deg, rgba(68, 102, 114, 0.20) 15.91%, rgba(255, 153, 0, 0.20) 100%), 
+        white; /* Add white as a second layer */ /* Blend the gradient with the white background */
+    padding: 15px 0; /* Add some vertical spacing */
+    box-shadow: 0 4px 6px rgb(250, 136, 0); /* Optional shadow */
+    border: none; /* Remove any border if present */
+}
+
+.custom-navbar .navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar .navbar-brand img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #ff8a00; /* Light gray text */
+    font-weight: 600; /* Slightly bold */
+    text-transform: uppercase; /* Capitalize links */
+    margin: 0 10px; /* Spacing between links */
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.navbar-toggler {
+    border-color: #FFD700; /* Gold border for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Customize the icon if desired */
+}
+
+/* LANDING GIF HOME PAGE */
+.landing-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 2.1rem; /* Specific size for this text */
+}
+
+/* LANDING PAGES - MAIN 4 */
+
+.project-section {
+  padding: 50px 0;
+}
+
+.project-row {
+  padding: 20px;
+}
+
+.text-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-section h6 {
+  font-size: 1.2rem;
+  color: #959595;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.rotated-image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rotated-image:hover {
+  transform: rotate(0deg);
+  box-shadow: 1px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.curved-separator {
+  height: 50px;
+  background: url('path-to-curve.svg') no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column !important;
+  }
+
+  .text-end {
+    text-align: center !important;
+  }
+}
+
+.rotated-image-2 {
+  transform: rotate(0deg);
+  box-shadow: 1px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.rotated-image-2:hover {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* NEXT BUTTON ROTATE */
+.btn:hover {
+  transform: rotate(10deg); /* Rotates the button by 10 degrees on hover */
+}
+
+/* every polaroid tells a story */
+.custom-image {
+  height: 250px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+
+/* Contact Page */
+
+.btn-warning {
+  background-color: #DEA545;
+  border: none;
+  color: white; /* Ensures white text */
+  font-size: 18px;
+  padding: 12px 24px;
+}
+
+.btn-warning:hover {
+  background-color: #d6d0bb; /* Slightly darker shade on hover */
+  color: white;
+}
+
+form input, form textarea {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #4D6571;
+  outline: none;
+}
+
+button.btn-secondary {
+  background-color: #4D6571;
+  color: white;
+  font-weight: bold;
+}
+
+button.btn-secondary:hover {
+  background-color: #3b505e;
+}
+
+
+/* Divider Container */
+.section-divider {
+  width: 100%;
+  height: 150px; /* Increased height for a larger divider */
+  background-color: #446672;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); /* Adjusted for a longer slant */
+}
+
+
+
+/* Master Footer Container */
+.master-footer {
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+/* Row 1: "CONNECT WITH ME" and Rectangle with Arrow */
+.row-one {
+  display: flex;
+  justify-content: space-between; /* "CONNECT WITH ME" on left, rectangle and arrow on the right */
+  width: 100%;
+  margin-bottom: 20px; /* Space between the rows */
+  align-items: center;
+}
+
+.connect-with-me {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.yarkproductions-container {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  gap: 10px;
+}
+
+.rectangle {
+  width: 50px;
+  height: 50px;
+  background-color: #5e7c8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.arrow {
+  font-size: 18px;
+  color: white;
+}
+
+/* Row 2: Icon Circles and 2024 YarkProductions */
+.row-two {
+  display: flex;
+  justify-content: space-between; /* Icons aligned to the left, YarkProductions to the right */
+  align-items: flex-end;
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.yarkproductions {
+  font-size: 16px;
+  color: black;
+}
